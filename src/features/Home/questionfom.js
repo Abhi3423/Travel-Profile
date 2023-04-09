@@ -1,8 +1,15 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { useNavigate } from "react-router-dom";
+import useModeHook from "../hooks/useModeHook";
+import { DataContext } from "../../shared/provider";
 
 const QuestionForm = () => {
+
+    const navigate = useNavigate();
+    // const { fetchData } = useContext(DataContext);
+    // const { checkjson } = useModeHook()
 
     const formik = useFormik({
         initialValues: {
@@ -14,7 +21,13 @@ const QuestionForm = () => {
             distance: Yup.string().required("* distance is required"),
         }),
         onSubmit: (values) => {
-            console.log(values)
+
+            console.log(values);
+            localStorage.setItem("person", JSON.stringify(values));
+            // checkjson(values);
+            // fetchData(values.distance);
+            navigate("/mode-choice");
+
         },
     });
 
