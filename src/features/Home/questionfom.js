@@ -27,19 +27,18 @@ const QuestionForm = () => {
 
     return (
         <Fragment>
-            <div className="rounded-md border-2 border-gray-600">
-                <form onSubmit={formik.handleSubmit} className="p-3">
+            <div>
+                <form onSubmit={formik.handleSubmit} className="flex flex-col gap-5">
 
                     {/* Mode */}
-                    <div className="flex flex-col gap-2 p-2">
+                    <div className="flex flex-col gap-3 p-2 border-4 rounded-md">
                         <label htmlFor="mode">Q1. What is your most frequently used means of travel from your home to work location ? </label>
                         <div
                             id="mode"
-                            className="btn-group btn-group-toggle flex flex-col sm:flex-row items-center gap-3 font-normal ml-8"
+                            className="btn-group btn-group-toggle flex flex-col md:flex-row items-center gap-3 font-normal ml-8"
                             data-toggle="buttons"
                         >
-                            <label>
-                                Bus
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -48,10 +47,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                Bus
                             </label>
 
-                            <label>
-                                Metro
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -60,10 +59,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                Metro
                             </label>
 
-                            <label>
-                                Own Two-wheeler
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -72,10 +71,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                Own Two-wheeler
                             </label>
 
-                            <label>
-                                Own Car
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -84,10 +83,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                Own Car
                             </label>
 
-                            <label>
-                                Walk/Bicycle
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -96,10 +95,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                Walk/Bicycle
                             </label>
 
-                            <label>
-                                Auto
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -108,10 +107,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                Auto
                             </label>
 
-                            <label>
-                                App based ride hailing cab services including Ola / Uber
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -120,6 +119,7 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                App based ride hailing cab services including Ola / Uber
                             </label>
 
                         </div>
@@ -133,15 +133,14 @@ const QuestionForm = () => {
                     </div>
 
                     {/* Distance */}
-                    <div className="flex flex-col gap-2 p-2">
+                    <div className="flex flex-col gap-3 p-2 border-4 rounded-md">
                         <label htmlFor="distance">Q2. What is the total distance between your home and workplace ? </label>
                         <div
                             id="distance"
-                            className="btn-group btn-group-toggle flex flex-col sm:flex-row gap-3 font-normal ml-8"
+                            className="btn-group btn-group-toggle flex flex-col items-center md:flex-row  gap-3 font-normal ml-8"
                             data-toggle="buttons"
                         >
-                            <label>
-                                &lt;5km
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -150,10 +149,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                &lt;5km
                             </label>
 
-                            <label>
-                                5 - 10 km
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -162,10 +161,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                5 - 10 km
                             </label>
 
-                            <label>
-                                10 - 15 km
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -174,10 +173,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                10 - 15 km
                             </label>
 
-                            <label>
-                                15 - 20 km
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -186,10 +185,10 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                15 - 20 km
                             </label>
 
-                            <label>
-                                &gt;25km
+                            <label className='flex gap-3'>
                                 <input
                                     className="border-solid ml-2"
                                     type="radio"
@@ -198,6 +197,7 @@ const QuestionForm = () => {
                                     onChange={formik.handleChange}
                                     onBlur={formik.handleBlur}
                                 />
+                                &gt;25km
                             </label>
 
                         </div>
@@ -211,7 +211,7 @@ const QuestionForm = () => {
                     </div>
 
                     {/* Next Button */}
-                    <div className="justify-center flex w-full">
+                    <div className="justify-end flex w-full">
                         <button
                             className="flex gap-1 bg-green-700 text-white text-xs p-2.5 px-5 rounded-md"
                             type="submit"
