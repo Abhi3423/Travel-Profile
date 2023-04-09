@@ -2,15 +2,10 @@ import { Fragment, useContext } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import useModeHook from "../hooks/useModeHook";
-import { DataContext } from "../../shared/provider";
 
 const QuestionForm = () => {
 
     const navigate = useNavigate();
-    // const { fetchData } = useContext(DataContext);
-    // const { checkjson } = useModeHook()
-
     const formik = useFormik({
         initialValues: {
             mode: "",
@@ -24,8 +19,6 @@ const QuestionForm = () => {
 
             console.log(values);
             localStorage.setItem("person", JSON.stringify(values));
-            // checkjson(values);
-            // fetchData(values.distance);
             navigate("/mode-choice");
 
         },

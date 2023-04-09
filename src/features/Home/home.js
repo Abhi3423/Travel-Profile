@@ -12,9 +12,7 @@ const Home = () => {
                     </div>
                 </div>
                 <QuestionForm/>
-
             </div>
-
         </Fragment>
     );
 }
