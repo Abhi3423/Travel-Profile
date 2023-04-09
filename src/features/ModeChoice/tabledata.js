@@ -76,11 +76,11 @@ const Tabledata = ({crowdData , serviceTypeData}) => {
                         <td className="py-1 col-span-5 text-center font-semibold text-base bg-yellow-400">Service type</td>
                     </tr>
                     <tr className="w-full grid grid-cols-5 bg-white border-b-2">
-                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0]['mode_1.crowd']]}</td>
-                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0]['mode_2.crowd']]}</td>
-                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0]['mode_4.crowd']]}</td>
-                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0][`${value4}.crowd`]]}</td>
-                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0][`${value5}.crowd`]]}</td>
+                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0]['mode_1.serv']]}</td>
+                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0]['mode_2.serv']]}</td>
+                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0]['mode_4.serv']]}</td>
+                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0][`${value4}.serv`]]}</td>
+                        <td className="px-6 py-4"> {serviceTypeData[data['Data'][0][`${value5}.serv`]]}</td>
                     </tr>
                 </tbody>
             </table>
