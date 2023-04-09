@@ -1,8 +1,9 @@
 import { Fragment, useEffect, useContext, useState } from "react";
-import Tabledata from "./tabledata";
-import Loading from "../../shared/loading";
-import SuccessModal from "../../shared/SuccessModal";
+import Tabledata from "./components/tabledata";
+import Loading from "../../UI/loading";
+import SuccessModal from "../../UI/SuccessModal";
 import { DataContext } from "../../shared/provider";
+import useCommonHook from "../hooks/useCommonHook";
 
 const ModeChoice = () => {
     const { fetchData } = useContext(DataContext);
@@ -12,6 +13,7 @@ const ModeChoice = () => {
     const [loading, setLoading] = useState(false)
     const storedPerson = localStorage.getItem("person");
     const person = JSON.parse(storedPerson);
+    const {randomField4, randomField5} = useCommonHook()
 
     useEffect(() => {
         fetchData(person.distance)
@@ -51,7 +53,7 @@ const ModeChoice = () => {
                         <p>MODE CHOICE</p>
                     </div>
                 </div>
-                {open && <Tabledata crowdData={crowdData} serviceTypeData={serviceTypeData} />}
+                {open && <Tabledata crowdData={crowdData} serviceTypeData={serviceTypeData} randomField4={randomField4} randomField5={randomField5}/>}
 
             </div>
         </Fragment>
