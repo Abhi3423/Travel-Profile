@@ -45,6 +45,7 @@ const Tabledata = ({ crowdData, serviceTypeData, randomField4, randomField5 }) =
                                     type="radio"
                                     name="mode"
                                     value="mode_1"
+                                    required
                                 />
                                 <td className="px-6 py-4">{data['Data'][0].mode_1}</td>
                             </label>
@@ -54,6 +55,7 @@ const Tabledata = ({ crowdData, serviceTypeData, randomField4, randomField5 }) =
                                     type="radio"
                                     name="mode"
                                     value="mode_2"
+                                    required
                                 />
                                 <td className="px-6 py-4">{data['Data'][0].mode_2}</td>
                             </label>
@@ -63,6 +65,7 @@ const Tabledata = ({ crowdData, serviceTypeData, randomField4, randomField5 }) =
                                     type="radio"
                                     name="mode"
                                     value="mode_4"
+                                    required
                                 />
                                 <td className="px-6 py-4">{data['Data'][0].mode_4}</td>
                             </label>
@@ -72,6 +75,7 @@ const Tabledata = ({ crowdData, serviceTypeData, randomField4, randomField5 }) =
                                     type="radio"
                                     name="mode"
                                     value={value4}
+                                    required
                                 />
                                 <td className="px-6 py-4">{data['Data'][0][value4]}</td>
                             </label>
@@ -81,6 +85,7 @@ const Tabledata = ({ crowdData, serviceTypeData, randomField4, randomField5 }) =
                                     type="radio"
                                     name="mode"
                                     value={value5}
+                                    required
                                 />
                                 <td className="px-6 py-4">{data['Data'][0][value5]}</td>
                             </label>
