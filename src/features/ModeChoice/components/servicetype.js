@@ -22,19 +22,19 @@ const ServiceType = ({ serviceTypeData, value4, value5 }) => {
     }
     return (
         <Fragment>
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 <img className="w-8" src={checksrc(data['Data'][0]['mode_1.serv'])} />
                 {serviceTypeData[data['Data'][0]['mode_1.serv']]}
             </td>
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 <img className="w-8" src={checksrc(data['Data'][0]['mode_2.serv'])} />
                 {serviceTypeData[data['Data'][0]['mode_2.serv']]}
             </td>
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 <img className="w-8" src={checksrc(data['Data'][0]['mode_4.serv'])} />
                 {serviceTypeData[data['Data'][0]['mode_4.serv']]}
             </td>
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 {serviceTypeData[data['Data'][0][`${value4}.serv`]]}
             </td>
             <td className="px-6 py-4 flex flex-col gap-2">

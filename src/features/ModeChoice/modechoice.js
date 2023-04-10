@@ -48,8 +48,8 @@ const ModeChoice = () => {
                 </SuccessModal>
             )}
             <div className="p-10 flex flex-col gap-4">
-                <div className="p-4 text-center border-4 border-green-500 rounded-md bg-green-300">
-                    <div className="flex flex-col text-5xl font-medium">
+                <div className="p-4 text-center border-4 rounded-md bg-blue-300 border-white">
+                    <div className="flex flex-col text-5xl font-bold">
                         <p>MODE CHOICE</p>
                     </div>
                 </div>

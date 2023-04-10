@@ -25,22 +25,22 @@ const Crowd = ({ crowdData, value4, value5 }) => {
     }
     return (
         <Fragment>
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 <img className="w-10" src={checksrc(data['Data'][0]['mode_1.crowd'])} />
                 <span>{crowdData[data['Data'][0]['mode_1.crowd']]}</span>
             </td>
 
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 <img className="w-10" src={checksrc(data['Data'][0]['mode_2.crowd'])} />
                 <span>{crowdData[data['Data'][0]['mode_2.crowd']]}</span>
             </td>
 
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 <img className="w-10" src={checksrc(data['Data'][0]['mode_4.crowd'])} />
                 <span>{crowdData[data['Data'][0]['mode_4.crowd']]}</span>
             </td>
 
-            <td className="px-6 py-4 flex flex-col gap-2">
+            <td className="px-6 py-4 flex flex-col gap-2 border-r-2">
                 <img className="w-10" src={checksrc(data['Data'][0][`${value4}.crowd`])} />
                 <span>{crowdData[data['Data'][0][`${value4}.crowd`]]}</span>
             </td>
