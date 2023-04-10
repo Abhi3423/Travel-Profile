@@ -7,7 +7,7 @@ import ac from '../../../assets/ac.png'
 const ServiceType = ({ serviceTypeData, value4, value5 }) => {
     const { data } = useContext(DataContext);
     const checksrc = (value) => {
-        console.log("checksrc value:", value);
+
         switch (value) {
             case 1:
                 return ordinary;

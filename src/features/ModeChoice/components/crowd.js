@@ -8,7 +8,7 @@ import full from '../../../assets/full.png'
 const Crowd = ({ crowdData, value4, value5 }) => {
     const { data } = useContext(DataContext);
     const checksrc = (value) => {
-        console.log("checksrc value:", value);
+    
         switch (value) {
             case 1:
                 return many;
